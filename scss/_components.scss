@@ -20,8 +20,7 @@
   border: 1px solid rgba(255, 255, 255, 0.04);
   background: rgba(255, 255, 255, 0.04);
   padding: 0.4rem 0.4rem 0.4rem 2.4rem;
-  display: flex;
-  align-items: center;
+  @include flexCenter;
   max-width: 52.1rem;
   gap: 16px;
   input {
@@ -42,9 +41,7 @@
   .icon {
     width: 4.8rem;
     height: 4.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexTotalCenter;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.03);
     background: rgba(255, 255, 255, 0.03);
@@ -71,8 +68,7 @@
   align-items: center;
   gap: 0.8rem;
   & > div {
-    display: flex;
-    align-items: center;
+    @include flexCenter;
     gap: 0.4rem;
     span {
       color: $gray-100;
